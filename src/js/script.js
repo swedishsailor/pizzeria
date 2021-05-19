@@ -58,6 +58,7 @@
       thisProduct.id = id;
       thisProduct.data = data;
       thisProduct.renderInMenu();
+      thisProduct.initAccordion();
 
       console.log('new Product:', thisProduct);
     }
@@ -76,6 +77,22 @@
 
       /* Add element to menu */
       menuContainer.appendChild(thisProduct.element);
+    }
+
+    initAccordion(){
+      const thisProduct = this;
+
+      /*find clickable trigger */
+
+      /*START: add event listener to clickable trigger on event click*/
+
+      /* prevent default action for event */
+
+      /* find active product (product that has active class */
+
+      /* if there is active product and its not thisProduct.element, remove class active from it */
+
+      /* toggle active class on thisProduct.element */
     }
   }
 
