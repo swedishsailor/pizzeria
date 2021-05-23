@@ -164,6 +164,18 @@
           // determine option value, e.g. optionId = 'olives', option = { label: 'Olives', price: 2, default: true }
           const option = param.options[optionId];
           console.log(optionId, option);
+          const optionPrice = option.price;
+
+          if(formData[paramId] && formData[paramId].includes(optionId)){
+            if(!option.default){
+              price += optionPrice;
+            }
+          } else {
+
+            if(option.default){
+              price -= optionPrice;
+            }
+          }
         }
       }
 
