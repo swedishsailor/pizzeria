@@ -1,4 +1,4 @@
-import { select, templates, classNames, settings } from './setting.js';
+import { select, templates, classNames, settings } from './settings.js';
 import { utils } from './utils.js';
 import AmountWidget from './AmountWidget.js';
 
