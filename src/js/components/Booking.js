@@ -12,9 +12,10 @@ class Booking{
 
     render(element) {
         const thisBooking = this;
-        const generatedHTML = templates.bookingWidget;
+        const generatedHTML = templates.bookingWidget();
         thisBooking.dom = {};
         thisBooking.dom.wrapper = element;
+        console.log(thisBooking.dom.wrapper, 'HTML:', generatedHTML);
         thisBooking.dom.peopleAmount = thisBooking.dom.wrapper.querySelector(select.booking.peopleAmount);
         thisBooking.dom.hoursAmount = thisBooking.dom.wrapper.querySelector(select.booking.hoursAmount);
 
@@ -29,6 +30,8 @@ class Booking{
 
         thisBooking.hoursAmount = new AmountWidget(thisBooking.dom.hoursAmount);
         thisBooking.dom.hoursAmount.addEventListener('click', function(){});
+
+        
     }
 }
 
