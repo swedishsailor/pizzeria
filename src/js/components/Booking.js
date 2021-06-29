@@ -176,24 +176,24 @@ class Booking{
     initWidgets(){
         const thisBooking = this;
         thisBooking.peopleAmount = new AmountWidget(thisBooking.dom.peopleAmount);
-        thisBooking.dom.peopleAmount.addEventListener('click', function(){
+       /* thisBooking.dom.peopleAmount.addEventListener('click', function(){
             console.log('pplAMount');
-        });
+        });*/
 
         thisBooking.hoursAmount = new AmountWidget(thisBooking.dom.hoursAmount);
-        thisBooking.dom.hoursAmount.addEventListener('click', function(){
+        /*thisBooking.dom.hoursAmount.addEventListener('click', function(){
             console.log('hourAmount');
-        });
+        });*/
 
         thisBooking.datePicker = new DatePicker(thisBooking.dom.datePicker);
-        thisBooking.dom.datePicker.addEventListener('click', function(){
+        /*thisBooking.dom.datePicker.addEventListener('click', function(){
             console.log('datepicker');
-        });
-
+        });*/
+        
         thisBooking.hourPicker = new HourPicker(thisBooking.dom.hourPicker);
-        thisBooking.dom.hourPicker.addEventListener('click',function(){
+       /* thisBooking.dom.hourPicker.addEventListener('input',function(){
             console.log('hourpicker');
-        });
+        });*/
 
         thisBooking.dom.wrapper.addEventListener('updated', function(){
             thisBooking.updateDOM();
