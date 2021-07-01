@@ -23,9 +23,9 @@ class Booking{
 
     sendBooking(){
         const thisBooking = this;
-        const url = settings.db.url + '/' + settings.db.order;
+        const url = settings.db.url + '/' + settings.db.booking;
     
-        const payload = {
+        let payload = {
          date:thisBooking.datePicker.value,
          hour:thisBooking.hourPicker.value,
          table: thisBooking.selectedTable,
@@ -35,7 +35,12 @@ class Booking{
         phone:thisBooking.dom.phone.value,
         address:thisBooking.dom.address.value
         };
-        console.log(thisBooking.chosenStarters());
+       // console.log(thisBooking.chosenStarters());
+        let starter = thisBooking.chosenStarters();
+        console.log(starter);
+
+        payload.starters.push(starter);
+        
         /*for(let prod of thisBooking.starters) {
           payload.starters.push(prod);
         }*/
@@ -56,13 +61,18 @@ class Booking{
           const thisBooking = this;
 
           for (let nr of thisBooking.dom.starters){
+           /* if (!nr.classList.contains('checked')){
+                nr.value =[];
+             }*/
               if(nr.classList.contains('checked')){
                   console.log(nr.value);
-              } else if (!nr){
-                  console.log('dziala');
-              }
+                 // if (nr.value == undefined)
+                 
+                  return nr.value;
+                 }
+                
+              //return nr.value;
           }
-
       }
     
 
@@ -302,6 +312,7 @@ class Booking{
 
         thisBooking.dom.startersDiv.addEventListener('click', function(e){
             e.target.classList.toggle('checked');
+            //thisBooking.chosenStarters();
         });
     }
 }
