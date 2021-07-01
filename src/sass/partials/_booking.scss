@@ -213,3 +213,12 @@
   @include flex(row, flex-start, space-between);
   margin: ($base-size * 4) auto;
 }
+
+.selected {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: $color-success;
+  opacity: 0.2;
+}
