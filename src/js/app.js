@@ -2,6 +2,7 @@ import { settings, select, classNames, templates } from './settings.js';
 import Product from './components/Product.js';
 import Cart from './components/Cart.js';
 import Booking from './components/Booking.js';
+import Home from './components/Home.js';
 
 
 const app = {
@@ -72,6 +73,13 @@ const app = {
     new Booking(widgetContainer);
   },
 
+  initHome: function(){
+    const widgetContainer2 = document.querySelector(select.containerOf.home);
+
+    new Home(widgetContainer2);
+   // console.log(widgetContainer2);
+  },
+
   initData: function () {
     const thisApp = this;
     const url = settings.db.url + '/' + settings.db.products;
@@ -119,6 +127,7 @@ const app = {
     thisApp.initCart();
     thisApp.initPages();
     thisApp.initBooking();
+    thisApp.initHome();
   },
 };
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
   <title>Pizzeria</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/range-slider.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext"
+    rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <header class="header">
@@ -21,9 +24,10 @@
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
         <div class="main-nav">
+          <a href="#home">Home</a>
           <a href="#order">Order</a>
           <a href="#booking">Booking</a>
-      </div>
+        </div>
         <div id="cart" class="cart">
           <div class="cart__summary">
             <span class="cart__total-number">0</span>
@@ -62,6 +66,9 @@
   </header>
 
   <div id="pages">
+    <section id="home">
+      <div id="home-view" class="home-wrapper container"></div>
+    </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
     </section>
@@ -242,9 +249,25 @@
     </div>
   </script>
 
+  <script id="template-home-widget" type="text/x-handlebars-template">
+  <div class="home-widget">
+<div class="higher-nav">
+  <div class="hrefs-up">
+    <div class="bookinghref hrefs"><p>xd</p></div>
+    <div class="orderhref hrefs"><p>lo</p></div>
+  </div>
+  <div class="hrefs-down">
+    <div class="opening-hours hrefs"><h1>OPENING HOURS:</h1><p>TUE-SUN 12PM - 12AM</p></div>
+  </div>
+</div>
+
+  </div>
+  </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script type="module" src="vendor/range-slider.js"></script>
   <script src="js/app.js" type="module"></script>
 </body>
+
 </html>

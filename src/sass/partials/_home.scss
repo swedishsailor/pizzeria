@@ -1,0 +1,59 @@
+.home-widget{
+    margin-top: 45px;
+    display: flex;
+    height: 1620px;
+    width: 600px;
+    background-color:#fff;
+    justify-content: center;
+}
+
+.higher-nav{
+    margin-top: 50px;
+    display:flex;
+    height: 380px;
+ //   width: 260px;
+    flex-direction: column;
+    
+    .bookinghref{
+        background-color:green;
+        width:228px;
+        height:85px;
+    }
+    
+    .orderhref {
+        background-color: red;
+        width: 228px;
+        height:85px;
+    }
+    
+    .opening-hours{
+        background-color: aqua;
+        width: 460px;
+        height:85px;
+        margin-top: 1px;
+        text-align: center;
+
+        
+        p {
+           margin-top: -23px;
+           
+        }
+    
+    }
+
+}
+
+
+.hrefs-up{
+    display: flex;
+    flex-direction: row;
+}
+
+.hrefs-down{
+    display: flex;
+
+}
+
+.hrefs{
+    margin: 1px;
+}
