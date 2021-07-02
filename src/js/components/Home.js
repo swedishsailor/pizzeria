@@ -26,15 +26,20 @@ class Home{
 
     initWidgets(){
         const thisHome = this;
+
+        thisHome.dom.imagesDiv.addEventListener('click', function(e){
+            e.preventDefault();
+            if(e.target.classList.contains('fas')){
+            e.target.classList.toggle('like');
+            e.target.classList.toggle('heart');
+            //console.log('??');
+            }
+        });
+
         thisHome.carousel = new Flickity(thisHome.dom.carousel, {
             cellAlign: 'left',
             contain: true,
             autoPlay: 3000
-        });
-
-        thisHome.dom.imagesDiv.addEventListener('click', function(e){
-            //e.preventDefault();
-            e.target.classList.toggle('like');
         });
     }
 } 

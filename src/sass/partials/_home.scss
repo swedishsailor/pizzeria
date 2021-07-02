@@ -17,66 +17,68 @@
 
 
   .bookinghref {
-    width: 298px;
+    width: 304px;
     height: 145px;
     background-image: url(https://i.postimg.cc/hPLc0x1M/pexels-tara-winstead-6489627.jpg);
-    background-position:center;
-    background-size:cover;
+    background-position: center;
+    background-size: cover;
 
     a {
-        text-decoration: none;
-        font-size: 33px;
-        color:black;
-        margin-left: 13%;
-        margin-top:55%;
-        text-align: center;
+      text-decoration: none;
+      font-size: 33px;
+      color: black;
+      margin-left: 13%;
+      margin-top: 55%;
+      text-align: center;
     }
+  }
 
-    a:hover {
-        p{
-        margin-top:5%;
-        transition: 1s;
-        color:#f6e58d;
-        }
+  .bookinghref:hover {
+    p{
+      margin-top: 0%;
+      font-size: 38px;
+      transition: 0.7s;
+      color: #f6e58d;
     }
   }
 
   .orderhref {
-    width: 298px;
+    width: 304px;
     height: 145px;
-    background-position:center;
-    background-size:cover;
+    background-position: center;
+    background-size: cover;
     background-image: url(https://i.postimg.cc/D0zyNzfm/pexels-cottonbro-5538230.jpg);
 
 
     a {
-        text-decoration: none;
-        font-size: 33px;
-        color:#fff;
-        margin-left: 11%;
-        margin-top:55%;
-        text-align: center;
+      text-decoration: none;
+      font-size: 33px;
+      color: #fff;
+      margin-left: 11%;
+      margin-top: 35%;
+      text-align: center;
     }
+  }
 
-    a:hover {
-        p{
-        margin-top:5%;
-        transition: 1s;
-        color:#f6e58d;
-        }
+  .orderhref:hover {
+    p{
+      margin-top: 0%;
+      font-size: 38px;
+      transition: 0.7s;
+      color: #f6e58d;
     }
   }
 
   .opening-hours {
     background-color: black;
-    width: 600px;
+    width: 610px;
     height: 125px;
     margin-top: 1px;
     text-align: center;
     color: #eb4d4b;
 
     h1 {
-      font-size:27px ;
+      font-size: 27px;
     }
 
     p {
@@ -101,59 +103,60 @@
 }
 
 .main-carousel {
-  width:93%;
+  width: 94%;
   margin-top: -95px;
   margin-left: 20px;
   //background-color: #dff9fb;
+
+  h2, p {
+    text-align: center;
+  }
 }
 
 .images {
-    display: flex;
-    margin-top:45px;
-    margin-left: 20px;
-    margin-bottom: 25px;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  margin-top: 45px;
+  margin-left: 28px;
+  margin-bottom: 25px;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-    .small-images {
-        width: 192px;
-        height: 192px;
-        object-fit: cover;
-        margin:1px;
-
-    }
+  .small-images {
+    width: 192px;
+    height: 192px;
+    object-fit: cover;
+    margin: 1px;
+  }
     
-    .fa-heart {
+  .heart {
+    display: none;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 8%;
+    font-size: 32px;
+    color: white;
+  }
 
-       display: none;
-        position: absolute;
-        margin-top: 8%;
-        margin-left: 8%;
-        font-size: 32px;
-        color: white;
-    }
+  .img-div:hover .heart {  
+    display: block;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 8%;
+    font-size: 32px;
+    color: white;
+  }
 
-    .img-div:hover .fa-heart {  
-        display: block;   
-        position: absolute;
-        margin-top: 8%;
-        margin-left: 8%;
-        font-size: 32px;
-        color: white;
-    }
-
-    .img-div:hover {
-        opacity: 0.8;
-    }
+  .img-div:hover {
+    opacity: 0.8;
+  }
 }
 
 .like {
-    color:red;
-    font-size: 34px;
+  display: block;
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 8%;
+  color: red;
+  font-size: 34px;
 }
-
-
-
-
-
 
