@@ -69,15 +69,41 @@ const app = {
 
   initBooking: function(){
     const widgetContainer = document.querySelector(select.containerOf.booking);
+  
 
     new Booking(widgetContainer);
+
+
   },
 
   initHome: function(){
+    const thisApp = this;
     const widgetContainer2 = document.querySelector(select.containerOf.home);
 
     new Home(widgetContainer2);
+
+    const widgetContainer = document.querySelector(select.containerOf.booking);
+    //const homeButton = document.querySelector('.bookinghref');
+
+
    // console.log(widgetContainer2);
+
+   document.querySelector('.bookinghref').addEventListener('click', function(){
+    document.querySelector('#bookingPage').classList.add('active');
+    document.querySelector('#homePage').classList.remove('active');
+    document.querySelector('#orderPage').classList.remove('active');
+
+   thisApp.initBooking();
+});
+
+document.querySelector('.orderhref').addEventListener('click', function(){
+  document.querySelector('#orderPage').classList.add('active');
+  document.querySelector('#homePage').classList.remove('active');
+  document.querySelector('#bookingPage').classList.remove('active');
+
+ thisApp.initMenu();
+});
+
   },
 
   initData: function () {
