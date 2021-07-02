@@ -24,7 +24,7 @@ class Home{
         thisHome.dom.orderHref = document.querySelector('.orderhref');
     }
 
-    initWidgets(){
+    /*initWidgets(){
         const thisHome = this;
 
         thisHome.dom.imagesDiv.addEventListener('click', function(e){
@@ -41,6 +41,6 @@ class Home{
             contain: true,
             autoPlay: 3000
         });
-    }
+    }*/
 } 
 export default Home;
